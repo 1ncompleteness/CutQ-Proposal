@@ -82,7 +82,7 @@
   Final Project Report
 }
 \author{
-  Jerry Ttuyan \quad and \quad Behrouz Barati Bagherabad\\[0.3em]
+  Jerry Ttuyan \quad and \quad Behrouz Barati B\\[0.3em]
   \small Group 8 \quad\textbullet\quad Instructor: Armineh Karamian \quad\textbullet\quad Spring 2026
 }
 \date{}
@@ -241,7 +241,7 @@ fully implemented in the prototype. The program-admin slice
 
 \begin{table}[H]
 \centering\small
-\begin{tabular}{@{}rp{4.0cm}p{8.5cm}@{}}
+\begin{tabular}{@{}rp{4.0cm}p{10cm}@{}}
 \toprule
 \# & \textbf{Capability} & \textbf{Notes}\\
 \midrule
@@ -250,46 +250,46 @@ FR-2  & Role-based access     & \emph{Customer}, \emph{Barber}, \emph{Shop Admin
 FR-3  & Customer management   & Profiles, contact info, preferences, visit history.\\
 FR-4  & Programs \& classes   & Service offerings: cuts, beard trims, packages.\\
 FR-5  & Roster management     & Barber assignments, capacity, working hours.\\
-FR-6  & Billing \& invoices   & Itemised charges, recurring packages, refunds.\\
+FR-6  & Billing \& invoices   & Itemized charges, recurring packages, refunds.\\
 FR-7  & Payments \& receipts  & Tokenised payments. Card data never hits our DB.\\
 FR-8  & Reporting dashboards  & Earnings, utilisation, no-show rate.\\
 FR-9  & Notifications         & Reminders, confirmations, Live Activity countdown.\\
-FR-10 & Activity log          & Audit trail for bookings, edits, refunds, role changes.\\
+FR-10 & Activity log          & Audit trail for bookings, edits, refunds, and role changes.\\
 \bottomrule
 \end{tabular}
 \caption{Ten functional requirements, mapped from the assignment
 brief.}
 \label{tab:fr}
 \end{table}
-
+\vspace{-30pt}
 % =====================================================================
 \section{Non-Functional Requirements}
 \label{sec:nfr}
 
 \begin{description}[leftmargin=2.2em,style=nextline]
-  \item[Accessibility (WCAG~2.1~AA)]
+  \item[Accessibility (WCAG~2.1~AA)]\par
     \begin{itemize}[noitemsep]
       \item 4.5:1 contrast on all body text, verified per surface.
       \item 44$\times$44~pt minimum tap targets across all controls.
       \item VoiceOver and TalkBack labels on every interactive element.
-      \item Honours Dynamic Type and OS-level reduce-motion.
+      \item Honors Dynamic Type and OS-level reduce-motion.
     \end{itemize}
-  \item[Performance]
+  \item[Performance]\par
     \begin{itemize}[noitemsep]
       \item Booking screens render in under one second on mid-tier
             devices.
-      \item Server pagination on rosters and history, no all-at-once
+      \item Server pagination on rosters and history, not all-at-once
             loads.
       \item Optimistic UI for booking confirmation, reconciled on
             error.
       \item Live Activity updates batched to preserve battery.
     \end{itemize}
-  \item[Security and Privacy]
+  \item[Security and Privacy]\par
     \begin{itemize}[noitemsep]
-      \item Stripe-style tokenisation: card data never hits our
+      \item Stripe-style tokenization: card data never hits our
             database.
-      \item Role-scoped APIs with server-enforced authorisation.
-      \item PII minimised, logs scrubbed of identifying detail.
+      \item Role-scoped APIs with server-enforced authorization.
+      \item PII minimized, logs scrubbed of identifying detail.
       \item TLS~1.2+, hashed credentials, rate-limited authentication.
     \end{itemize}
 \end{description}
@@ -305,7 +305,7 @@ that respond to them.
 
 \begin{table}[H]
 \centering\small
-\begin{tabular}{@{}p{4.0cm}p{5.0cm}p{5.0cm}@{}}
+\begin{tabular}{@{}p{5.0cm}p{5.0cm}p{5.0cm}@{}}
 \toprule
 \textbf{Risk} & \textbf{How CutQ responds} & \textbf{Why it works}\\
 \midrule
@@ -316,7 +316,7 @@ Anxiety: \emph{"Will my slot disappear?"} &
 Trust: \emph{"Did the booking really go through?"} &
   Two-step confirmation, large success state, calendar-style detail
   card. &
-  Closes feedback loops the user can see and re-check.\\
+  Closes feedback loops that the user can see and re-check.\\
 \addlinespace
 Cognitive load: \emph{"Too many choices, too many steps."} &
   Progressive disclosure: pick barber, pick time, confirm. &
@@ -331,7 +331,7 @@ Physical comfort: \emph{"I can't read this in the chair."} &
 \caption{Designing for how it feels, not just what it does.}
 \label{tab:emo}
 \end{table}
-
+\vspace{-30pt}
 % =====================================================================
 \section{Barriers Analysis}
 \label{sec:barriers}
@@ -368,7 +368,7 @@ schedule and the methods we leaned on at each stage.
 
 \begin{table}[H]
 \centering\small
-\begin{tabular}{@{}rlp{3.4cm}p{6.5cm}@{}}
+\begin{tabular}{@{}rlp{3.4cm}p{8.5cm}@{}}
 \toprule
 \# & \textbf{Weeks} & \textbf{Stage} & \textbf{Activity}\\
 \midrule
@@ -386,7 +386,7 @@ affinity diagramming, task analysis, heuristic evaluation, moderated
 usability tests ($n=6$), and the System Usability Scale.}
 \label{tab:process}
 \end{table}
-
+\vspace{-30pt}
 % =====================================================================
 \section{Wireframes}
 \label{sec:wireframes}
@@ -406,7 +406,7 @@ hop that later became the Live Activity widget
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=\linewidth]{figures/wireframes.png}
+\includegraphics[width=0.95\linewidth]{figures/wireframes.png}
 \caption{Lo-fi flow board sketched in week 8. The top row is the
 client flow (Home, Choose Barber, Choose Time, Confirm), and the
 bottom row is the barber flow (Dashboard, Appointment Live View).
@@ -478,7 +478,7 @@ the only questions that matter mid-shift
 \begin{minipage}[t]{0.40\linewidth}
 \vspace{0pt}
 \centering
-\includegraphics[width=\linewidth]{figures/dashboard.png}
+\includegraphics[width=0.65\linewidth]{figures/dashboard.png}
 \end{minipage}\hfill
 \begin{minipage}[t]{0.55\linewidth}
 \vspace{0pt}
@@ -520,7 +520,7 @@ appointments into something users can feel.
 \begin{minipage}[t]{0.38\linewidth}
 \vspace{0pt}
 \centering
-\includegraphics[width=\linewidth]{figures/lock-screen.png}
+\includegraphics[width=0.65\linewidth]{figures/lock-screen.png}
 \end{minipage}\hfill
 \begin{minipage}[t]{0.58\linewidth}
 \vspace{0pt}
@@ -588,6 +588,7 @@ export function useActiveBooking(): Booking | null {
 }
 \end{lstlisting}
 \end{figure}
+\vspace{-30pt}
 
 % =====================================================================
 \section{High-Fidelity Design (Figma)}
@@ -642,7 +643,7 @@ prerendered at build time.
 
 \begin{table}[H]
 \centering\small
-\begin{tabular}{@{}lp{8.5cm}@{}}
+\begin{tabular}{@{}lp{10.5cm}@{}}
 \toprule
 \textbf{Route} & \textbf{What it shows}\\
 \midrule
@@ -708,7 +709,7 @@ in a session recording.
 
 \begin{table}[H]
 \centering\small
-\begin{tabular}{@{}p{6.0cm}p{8.0cm}@{}}
+\begin{tabular}{@{}p{7.0cm}p{8.5cm}@{}}
 \toprule
 \textbf{What testing surfaced} & \textbf{What we shipped in response}\\
 \midrule
@@ -719,7 +720,7 @@ Time-slot list scrolled past unavailable times unnoticed. &
   Greyed out unavailable rows and reduced their visual weight.\\
 \addlinespace
 Barber dashboard \emph{In Progress} pill confused with a system notification. &
-  Repositioned to top-right with a calmer fill colour.\\
+  Repositioned to top-right with a calmer fill color.\\
 \addlinespace
 Live Activity card looked like a generic notification. &
   Added avatar and shop name to anchor identity at a glance.\\
@@ -743,7 +744,7 @@ of the project and reports the evidence we have for each.
 
 \begin{table}[H]
 \centering\small
-\begin{tabular}{@{}p{5.5cm}p{7.0cm}c@{}}
+\begin{tabular}{@{}p{7.0cm}p{7.0cm}c@{}}
 \toprule
 \textbf{Success criterion} & \textbf{Evidence} & \textbf{Met}\\
 \midrule
