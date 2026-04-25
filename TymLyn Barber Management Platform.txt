@@ -1,0 +1,88 @@
+Barber Management Platform 
+Jerry Ttuyan
+Behrouz Barati Bagherabad 
+
+Group 8
+
+
+From the barber perspective
+Clients arriving late to appointments 
+No-shows creating wasted time slots  
+Difficulty keeping track of schedule flow  
+From the client perspective 
+Barbers being fully booked with no alternatives  
+Last-minute booking uncertainty
+Not knowing where to go when their barber is unavailable
+Problems in Current Systems
+
+
+Barber Management
+A scheduling platform designed specifically for barber shops that improves time awareness and booking flexibility.
+Barbers
+manage appointments and service timing 
+reduce no-shows and late arrivals 
+Clients
+easily book appointments 
+see real-time timing information
+find alternative barbers if their preferred barber is unavailable
+Proposed Solution
+
+
+Primary Users
+ Barbers and shop owners who manage daily appointment schedules.
+Secondary Users
+ Clients booking haircuts or grooming services.
+Target Users
+
+User Goals
+ Barbers want to:
+keep their day organized 
+avoid wasted appointment slots 
+manage client flow efficiently
+ Clients want to:
+quickly find an available barber
+book appointments easily
+arrive at the right time
+
+
+UX Design Goals
+The design focuses on usability and clarity:
+Easy to learn scheduling interface
+Clear visibility of time and appointments
+Reduced booking errors or conflicts
+Better communication between barbers and clients
+The system aims to create a smooth scheduling experience for both sides.
+
+Core Features
+Key features include:
+Appointment booking system
+Daily barber schedule dashboard
+Client profiles and history
+Appointment reminders
+Alternative barber suggestions when fully booked
+
+Unique Feature
+Live Activity Appointment Countdown 
+This uses mobile live activity notifications to improve time awareness.
+
+For barbers:
+shows time remaining for the current client
+helps manage appointment pacing 
+For clients:
+lock-screen countdown to their appointment
+helps reduce lateness
+
+Constraints & Assumptions
+Constraints:
+Must be simple enough for non-technical users
+Works on mobile and web platforms 
+Assumptions:
+Barbers rely heavily on appointment timing.
+Clients benefit from reminders and real-time updates.
+
+The system will be considered successful if: 
+fewer late arrivals or missed appointments occur
+barbers experience fewer empty time slots
+clients can quickly find available appointments
+users report the system is simple and easy to use
+Success Criteria
